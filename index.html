@@ -48,7 +48,7 @@
                 <div class="navbar py-9 px-0">
                     <div class="navbar-start">
                         <button
-                            class="btn lg:h-12 lg:w-28 bg-btnBg lg:text-xl font-semibold text-primary-text-color text-[10px]">blog</button>
+                            class="btn lg:h-12 lg:w-28 bg-btnBg lg:text-xl font-semibold text-primary-text-color text-[10px]" id="blog">blog</button>
                     </div>
                     <div class="navbar-center ">
 
@@ -70,15 +70,15 @@
         <div
             class="flex lg:justify-center md:justify-center justify-center gap-4 lg:pt-10 md:pt-16 pt-10 lg:w-[1140px] mx-auto">
             <button
-                class="btn py-4 px-8 rounded-lg border border-[#1111114D] bg-btnBg text-primary-text-color">Donation</button>
+                class="btn py-4 px-8 rounded-lg border border-[#1111114D] bg-btnBg text-primary-text-color " id="donate-btn">Donation</button>
             <button
-                class="btn py-4 px-8 rounded-lg border border-[#1111114D] text-secondary-text-color">History</button>
+                class="btn py-4 px-8 rounded-lg border border-[#1111114D] text-secondary-text-color" id="history-btn">History</button>
         </div>
     </header>
     <!-- header end  -->
 
     <main class="lg:w-[1140px] mx-auto  px-3 lg:px-0 md:px-5">
-        <section class="">
+        <section class="" id="donate-container">
             <!-- Donate for Flood at Noakhali start -->
             <div
                 class="grid lg:grid-cols-2 grid-cols-1 w-full p-8 rounded-2xl gap-8 border border-[secondary-text-color] my-5">
@@ -195,7 +195,7 @@
         </section>
 
         <!-- History section start  -->
-        <section id="history-container">
+        <section id="history-container" class="hidden">
             
         </section>
         <!-- History section end  -->
@@ -227,6 +227,7 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/utilities.js"></script>
+
 
 
 

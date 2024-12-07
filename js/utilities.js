@@ -1,11 +1,18 @@
 
+function getRemoveClassList (id, removeValue) {
+    document.getElementById(id).classList.remove(removeValue)
+
+}
+function getAddedClassList (id, addedValue){
+    // document.getElementById(id).classList.add(addValue)
+    document.getElementById(id).classList.add(addedValue)
+}
+
 
 function getInputAmount (id){
+
     const inputValue = document.getElementById(id).value;
-
-
     const inputAmount = parseFloat(inputValue)
-
     return inputAmount
 
 }
@@ -49,11 +56,11 @@ function appendDonateHistory (id, amount, title){
 
 function getInputValidations (input) {
     if(input <= 0){
-        alert('Place provide 0 gater then amount')
+        alert('Place provides in 0 greater than the amount')
         return
     }
     if(isNaN(input)){
-        alert('Place provide validate amount')
+        alert('Enter the correct input amount')
         return
     }else{
         return parseFloat(input)
