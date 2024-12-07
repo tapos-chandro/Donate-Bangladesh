@@ -166,10 +166,10 @@
                         <button
                             class="flex gap-2 pointer-events-none bg-cart-amount-bg px-4 py-2 rounded-lg items-center">
                             <img src="./assets/coin.png" alt="">
-                            <span>0</span> BDT
+                            <span id="donate-total-amount-three">0</span> BDT
                         </button>
                     </div>
-                    <h2 class="card-title text-primary-text-color font-bold text-xl py-4">Aid for Injured in the Quota
+                    <h2 class="card-title text-primary-text-color font-bold text-xl py-4" id="donate-title-three">Aid for Injured in the Quota
                         Movement</h2>
                     <p class="text-secondary-text-color leading-6"> The recent Quota movement has resulted in numerous
                         injuries and significant hardship for many individuals. Your support is crucial in providing
@@ -180,11 +180,12 @@
                         time of need.</p>
 
                     <div class="">
-                        <input type="text" placeholder="Write Donation Amount"
+                        <form>
+                            <input type="text" placeholder="Write Donation Amount" id="donate-amount-three"
                             class="input input-bordered w-full mt-6 p-4" required /><br>
-                        <button
-                            class="rounded-lg w-full bg-btnBg mt-4 text-primary-text-color text-xl font-semibold py-4 px-8">Donate
-                            Now</button>
+                            <input type="submit" value="Donate Now" id="donate-btn-three"
+                            class="rounded-lg w-full bg-btnBg mt-4 text-primary-text-color text-xl font-semibold py-4 px-8">
+                        </form>
                     </div>
 
 
