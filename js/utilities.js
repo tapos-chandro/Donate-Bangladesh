@@ -47,10 +47,6 @@ function appendDonateHistory (id, amount, title){
     addDonateHistory.appendChild(div)
 }
 
-
-
-
-
 function getInputValidations (input) {
     if(input <= 0){
         alert('Place provide 0 gater then amount')
